@@ -8,3 +8,14 @@
 ## July 2, 2026
 - Audited all openmelt code for required modifications to code/hardware
 - Also learned how code worked to tune tests for usefulness
+
+## July 3, 2026
+- Installed board package for Pro Micro
+- Tested rc handler, and most of led driver (missing shimmer, but led_driver is so simple, it doesn't need testing)
+- Verified failsafe for iA6B
+    - I did this by turning off the transmitter while main loop was running. Throttle immediately jumped to 0.  
+
+**Important notes on RC behavior**
+- When receiver is first powered, it does not send any interrupts
+- Once it receives a signal from the transmitter, it does not stop sending interrupts until it loses power again, even if the transmitter is turned off
+- This means the rc signal is technically healthy (and in a benign state because of failsafe), even if transmitter is off
