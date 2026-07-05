@@ -19,3 +19,11 @@
 - When receiver is first powered, it does not send any interrupts
 - Once it receives a signal from the transmitter, it does not stop sending interrupts until it loses power again, even if the transmitter is turned off
 - This means the rc signal is technically healthy (and in a benign state because of failsafe), even if transmitter is off
+
+## July 5, 2026
+- Tested Adafruit accelerometer using accel_handler with qwiic to pins connector
+    - 400G had small offset (corrected for during setup), and roughly +-0.7G error (normal).
+    - 200G had almost no offset, and roughly +-0.3G error.
+- Tested led_driver. The standard on worked (it would be concerning if it didn't), but the shimmer is weird.
+    - Shimmer (assuming its called continuously) turns the LED on and off at 488 Hz, inperceptible to the human eye unless the bot is spinning
+    - I need to figure out when shimmer is supposed to be called, because that's strange. Issue added.
