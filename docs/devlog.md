@@ -27,3 +27,6 @@
 - Tested led_driver. The standard on worked (it would be concerning if it didn't), but the shimmer is weird.
     - Shimmer (assuming its called continuously) turns the LED on and off at 488 Hz, inperceptible to the human eye unless the bot is spinning
     - I need to figure out when shimmer is supposed to be called, because that's strange. Issue added.
+    
+## July 13, 2026
+- Updated parts list and added it to docs
