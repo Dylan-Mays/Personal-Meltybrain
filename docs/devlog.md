@@ -30,3 +30,7 @@
     
 ## July 13, 2026
 - Updated parts list and added it to docs
+
+## July 14, 2026
+- Chose Tattu 3S 650mAh battery for now
+- SPARC ruleset has no rules for batteries under 48V, so 3S is legal
