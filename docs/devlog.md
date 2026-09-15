@@ -34,3 +34,25 @@
 ## July 14, 2026
 - Chose Tattu 3S 650mAh battery for now
 - SPARC ruleset has no rules for batteries under 48V, so 3S is legal
+
+## Between July 14 and September 3, 2026
+- I did a bad. I stopped keeping track of progress, so here's a short bulleted list of what I've done in this time
+- Modeled each component in Onshape (**did not add mass to models**)
+- Modeled and printed the spin test chassis
+- Bought an 850mAh battery instead of the 650mAh
+
+## September 4, 2026
+- Added mass to each component in Onshape
+- Created assembly for full spin test to verify fit
+
+## September 7, 2026
+- Wrote up motor driver test sketch. Have not run it yet.
+
+## September 10, 2026
+- Remodeled spin test chassis to include receiver. Accelerometer logic requires input from transmitter.
+- Updated assembly, and verified center-of-mass is close to the center
+    - More adjustment needs to be done when the test is built
+
+## September 15, 2026
+- Added link to Onshape CAD files
+- Committed all changes since July 14 all at once (I should have been doing periodic commits, but was too lazy to set up git on my desktop)

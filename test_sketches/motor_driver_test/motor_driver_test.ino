@@ -1,7 +1,9 @@
-#include "melty_config.h"
-#include "led_driver.h"
+#include "motor_driver.h"
 #include "rc_handler.h"
+#include "led_driver.h"
+#include "melty_config.h"
 
+// This function is copied from openmelt.ino
 //loops until a good RC signal is detected and throttle is zero (assures safe start)
 static void wait_for_rc_good_and_zero_throttle() {
 
@@ -19,10 +21,13 @@ static void wait_for_rc_good_and_zero_throttle() {
   }
 }
 
+// Motor 1 pin = 9
+// Throttle pin = 0
 void setup() {
   // put your setup code here, to run once:
 
-  // Init led and rc pins
+  // Init motors, led, and rc pins
+  init_motors();
   init_led();
   init_rc();
 
@@ -41,8 +46,46 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.print("Throttle percent: "); Serial.println(rc_get_throttle_percent());
-  Serial.print("Leftright pulse length: "); Serial.println(rc_get_leftright());
-  Serial.print("Forback position: "); Serial.println(rc_get_forback());
-  delay(1000);
+  float throttle_percent = rc_get_throttle_percent();
+
+  // Flash heading led twice to indicate motor turned on
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+  delay(250);
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+
+
+  motor_1_on(throttle_percent);
+
+  delay(10000) // 10 seconds to mess with the throttle
+
+  // Flash heading led twice to indicate motor turned to coast (same as off)
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+  delay(250);
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+
+  motor_1_coast(); // Should be the same as off, but ok
+
+  delay(5000); // coast for 5 seconds
+
+  // Flash heading led twice to indicate motor turned off
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+  delay(250);
+  heading_led_on(0);
+  delay(250);
+  heading_led_off();
+
+  motor_1_off();
+
+  delay(5000); // Turn off for 5 seconds
+
 }
