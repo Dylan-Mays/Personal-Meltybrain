@@ -1,3 +1,6 @@
+## Forked from openmelt2
+This repo started as a fork of [nothinglabs/openmelt2](https://github.com/nothinglabs/openmelt2/). Everything below is the original README.
+
 # Open Melt
 
 Open Melt is an open-source translational drift (aka "melty brain") robot controller based on Arduino.
