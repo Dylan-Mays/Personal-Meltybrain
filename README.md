@@ -3,6 +3,7 @@ This repo started as a fork of [nothinglabs/openmelt2](https://github.com/nothin
 
 ### CAD Files:
 [All CAD files (Onshape)](ttps://cad.onshape.com/documents?nodeId=e915ae78c1e66df596781a81&resourceType=folder)
+- Broken for now since I can't link Onshape folders. I was used to SolidWorks and split each part into its own document. I'll merge each part into one or two documents soon so I can link them.
 
 ### Parts List:
 [Parts List (Google Docs)](https://docs.google.com/spreadsheets/d/1ZeUJt-f2oxsGza50ERpFPobtKJWYCq1dbJZ-O_uFvIc/edit?usp=sharing)
