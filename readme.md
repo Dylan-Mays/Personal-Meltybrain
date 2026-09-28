@@ -1,6 +1,12 @@
 ## Forked from openmelt2
 This repo started as a fork of [nothinglabs/openmelt2](https://github.com/nothinglabs/openmelt2/). Everything below is the original README.
 
+### CAD Files:
+[All CAD files (Onshape)](ttps://cad.onshape.com/documents?nodeId=e915ae78c1e66df596781a81&resourceType=folder)
+
+### Parts List:
+[Parts List (Google Docs)](https://docs.google.com/spreadsheets/d/1ZeUJt-f2oxsGza50ERpFPobtKJWYCq1dbJZ-O_uFvIc/edit?usp=sharing)
+
 # Open Melt
 
 Open Melt is an open-source translational drift (aka "melty brain") robot controller based on Arduino.
