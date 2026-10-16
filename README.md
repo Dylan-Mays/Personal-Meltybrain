@@ -1,12 +1,13 @@
 ## Forked from openmelt2
-This repo started as a fork of [nothinglabs/openmelt2](https://github.com/nothinglabs/openmelt2/). Everything below is the original README.
+This repo started as a fork of [nothinglabs/openmelt2](https://github.com/nothinglabs/openmelt2/).
 
 ### CAD Files:
-[All CAD files (Onshape)](ttps://cad.onshape.com/documents?nodeId=e915ae78c1e66df596781a81&resourceType=folder)
-- Broken for now since I can't link Onshape folders. I was used to SolidWorks and split each part into its own document. I'll merge each part into one or two documents soon so I can link them.
+[All CAD files (Onshape)](https://cad.onshape.com/documents/9d9fd8df8863d92e89433741/w/ccf9201bc8f68e090a0a121b/e/091d088f205a050de34af4d9)
 
 ### Parts List:
 [Parts List (Google Docs)](https://docs.google.com/spreadsheets/d/1ZeUJt-f2oxsGza50ERpFPobtKJWYCq1dbJZ-O_uFvIc/edit?usp=sharing)
+
+**Everything below this point is the original README from openmelt2**
 
 # Open Melt
 

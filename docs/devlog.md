@@ -56,3 +56,6 @@
 ## September 15, 2026
 - Added link to Onshape CAD files
 - Committed all changes since July 14 all at once (I should have been doing periodic commits, but was too lazy to set up git on my desktop)
+
+## October 16, 2026
+- Merged all Onshape documents into the same document
